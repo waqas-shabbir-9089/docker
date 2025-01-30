@@ -43,4 +43,4 @@ jobs:
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:latest
       - name: Update ECS cluster
         run: |
-        aws ecs update-service --cluster UBU-Cluster --service api-service --force-new-deployment
+          aws ecs update-service --cluster UBU-Cluster --service api-service --force-new-deployment
