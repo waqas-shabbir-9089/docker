@@ -16,7 +16,7 @@ RUN npm run build
 
 # Stage 2
 
-FROM node:18 as runner
+FROM node:16 as runner
 
 WORKDIR /app
 
