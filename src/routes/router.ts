@@ -2,7 +2,7 @@ import { Router } from "express";
 
 const router = Router();
 
-router.get("/", (req, res) => res.json({ message: "Hello from Docker waqasshabbir3 🎉" }));
+router.get("/", (req, res) => res.json({ message: "Hello from Docker Cathy Heaven 🎉" }));
 
 router.get("/health", (req, res) => {
   res.status(200).json({ message: "Everything is good here 👀" });
