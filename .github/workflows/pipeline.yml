@@ -2,7 +2,11 @@ name: ECS deployment
 
 on:
   push:
-    branches: [main] # the branch we want this to run on
+    branches: [main] # Trigger when code is pushed to main
+  pull_request:
+    branches: [main] # Trigger when a PR is merged into main
+  workflow_dispatch: # Allows manual triggering from GitHub Actions UI
+ 
 env: 
   CLUSTER_NAME: UBU-Cluster 
 jobs:
